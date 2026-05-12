@@ -1,1 +1,227 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Patrol | Advanced Robotic Agriculture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg { background-color: #f3f4f6; }
+        .navy-blue { background-color: #003366; }
+        .accent-red { background-color: #cc3333; }
+        .smooth-scroll { scroll-behavior: smooth; }
+        #team-section { display: none; }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="smooth-scroll font-sans text-gray-800">
+
+    <nav class="navy-blue text-white sticky top-0 z-50 py-4 px-6 flex justify-between items-center shadow-lg">
+        <div class="text-2xl font-bold tracking-tighter uppercase italic">Pest Patrol</div>
+        <div class="hidden md:flex space-x-6 text-sm font-semibold uppercase">
+            <a href="#home" class="hover:text-blue-300">Home</a>
+            <a href="#about" class="hover:text-blue-300">About Us</a>
+            <a href="#technology" class="hover:text-blue-300">Technology</a>
+            <a href="#contact" class="hover:text-blue-300">Contact</a>
+        </div>
+        <button class="md:hidden"><i class="fas fa-bars text-xl"></i></button>
+    </nav>
+
+    <section id="home" class="hero-bg py-24 px-6 md:px-20 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+            <h1 class="text-6xl font-black text-blue-900 leading-tight mb-4 italic">
+                Pest Patrol: <br>
+                <span class="text-red-600 uppercase not-italic text-4xl">The Future of Crop Intelligence</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 max-w-md">
+                Redefining agricultural standards through autonomous detection and precision management. Built for reliability. Engineered for the planet.
+            </p>
+            <div class="flex space-x-4">
+                <button onclick="toggleTeam()" class="accent-red text-white px-6 py-4 rounded-md font-bold uppercase hover:bg-red-700 transition-all shadow-md">People Behind This Project</button>
+                <a href="#about" class="border-2 border-blue-900 text-blue-900 px-6 py-4 rounded-md font-bold uppercase hover:bg-blue-900 hover:text-white transition-all">Explore the Tech</a>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+            <div class="w-full h-96 bg-gray-300 rounded-2xl flex items-center justify-center text-gray-500 italic shadow-2xl border-4 border-white overflow-hidden">
+                <img src="https://via.placeholder.com/800x600?text=Pest+Patrol+Robot+V1" alt="Robot Preview" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-xs font-black text-red-600 uppercase tracking-widest mb-2">Our Mission</h2>
+                    <h3 class="text-4xl font-bold text-blue-900 mb-6 uppercase italic">Engineering a Sustainable Tomorrow</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Pest Patrol was born from a singular vision: to bridge the gap between traditional farming and modern robotics. Our system isn't just a machine; it's a tireless guardian for the agricultural industry.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-4 border-red-600 pl-4">
+                            <h4 class="font-bold text-blue-900 uppercase text-sm">Efficiency</h4>
+                            <p class="text-xs text-gray-500 italic">Maximizing yield while minimizing chemical waste.</p>
+                        </div>
+                        <div class="border-l-4 border-blue-900 pl-4">
+                            <h4 class="font-bold text-blue-900 uppercase text-sm">Reliability</h4>
+                            <p class="text-xs text-gray-500 italic">Consistent performance across all terrain conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-gray-100 p-8 rounded-xl border-b-8 border-blue-900 shadow-xl">
+                    <h4 class="font-black text-blue-900 uppercase mb-4 tracking-tighter">Why Pest Patrol?</h4>
+                    <p class="text-sm text-gray-600 italic">"In an era where food security is paramount, we provide the mechanical precision required to protect our crops without the heavy environmental toll of traditional methods."</p>
+                    <p class="mt-4 text-xs font-bold text-red-600 uppercase">— The Engineering Council</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology" class="py-24 px-6 bg-gray-50 border-t border-b">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-xs font-black text-red-600 uppercase tracking-widest mb-2">Core Technology</h2>
+            <h3 class="text-4xl font-bold text-blue-900 uppercase italic">Next-Gen Capability</h3>
+        </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-md border-b-4 border-blue-900 card-hover">
+                <i class="fas fa-eye text-red-600 text-3xl mb-6"></i>
+                <h4 class="font-bold text-blue-900 uppercase mb-2">Precision Optics</h4>
+                <p class="text-sm text-gray-600 leading-relaxed italic">Utilizing high-definition multispectral sensors to identify pests in real-time.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border-b-4 border-blue-900 card-hover">
+                <i class="fas fa-microchip text-red-600 text-3xl mb-6"></i>
+                <h4 class="font-bold text-blue-900 uppercase mb-2">Neural Processing</h4>
+                <p class="text-sm text-gray-600 leading-relaxed italic">Low-latency AI capable of distinguishing between beneficial insects and harmful pests.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border-b-4 border-blue-900 card-hover">
+                <i class="fas fa-robot text-red-600 text-3xl mb-6"></i>
+                <h4 class="font-bold text-blue-900 uppercase mb-2">Dual-Drive Chassis</h4>
+                <p class="text-sm text-gray-600 leading-relaxed italic">All-terrain modular platform designed for smooth maneuverability through uneven soil.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team-section" class="py-20 px-6 bg-white border-b">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-4 uppercase italic">Meet Our Team</h2>
+            <p class="text-gray-500 mb-12 italic text-lg tracking-wide">The Innovators of Pest Patrol</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+                
+                <div class="p-6 border-2 border-red-600 rounded-xl bg-red-50 shadow-md card-hover">
+                    <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">KA</div>
+                    <h4 class="text-sm font-bold text-gray-900">Kiel Alcantara</h4>
+                    <p class="text-[10px] uppercase text-red-600 font-black mb-1">Leader | Engineer</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">CT</div>
+                    <h4 class="text-sm font-bold">Curt Tataro</h4>
+                    <p class="text-[10px] text-blue-900 font-bold uppercase mb-1">Project Architect</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">JV</div>
+                    <h4 class="text-sm font-bold">Jared Vallangca</h4>
+                    <p class="text-[10px] text-blue-900 font-bold uppercase mb-1">Project Architect</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">AR</div>
+                    <h4 class="text-sm font-bold">Angelo Rivera</h4>
+                    <p class="text-[10px] text-blue-900 font-bold uppercase mb-1">Project Architect</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">MD</div>
+                    <h4 class="text-sm font-bold">Marinella Dela Cruz</h4>
+                    <p class="text-[10px] text-blue-900 font-bold uppercase mb-1">Project Architect</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">SV</div>
+                    <h4 class="text-sm font-bold">Shaine Vasquez</h4>
+                    <p class="text-[10px] text-blue-900 font-bold uppercase mb-1">Project Architect</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">JA</div>
+                    <h4 class="text-sm font-bold">Jewel Arce</h4>
+                    <p class="text-[10px] text-green-700 font-bold uppercase mb-1">Engineer</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">JH</div>
+                    <h4 class="text-sm font-bold">John Paul Halili</h4>
+                    <p class="text-[10px] text-green-700 font-bold uppercase mb-1">Engineer</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">JL</div>
+                    <h4 class="text-sm font-bold">Jesriel Lapig</h4>
+                    <p class="text-[10px] text-green-700 font-bold uppercase mb-1">Engineer</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-green-700 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">JS</div>
+                    <h4 class="text-sm font-bold">Jovylem Siblag</h4>
+                    <p class="text-[10px] text-green-700 font-bold uppercase mb-1">Engineer</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl shadow-sm border-t-4 border-yellow-400 card-hover">
+                    <div class="w-16 h-16 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">AB</div>
+                    <h4 class="text-sm font-bold">Allyssa Bajalla</h4>
+                    <p class="text-[10px] text-yellow-600 font-bold uppercase mb-1">Tech Support</p>
+                    <p class="text-[9px] text-gray-400 font-bold border-t pt-2 uppercase tracking-tighter">Researcher</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="navy-blue text-white pt-16 pb-8 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 border-b border-blue-800 pb-12 text-center md:text-left">
+            <div><h5 class="text-yellow-400 font-bold text-2xl uppercase italic">11</h5><p class="text-xs uppercase text-gray-400">Team Members</p></div>
+            <div><h5 class="text-yellow-400 font-bold text-2xl uppercase italic">01</h5><p class="text-xs uppercase text-gray-400">Global Mission</p></div>
+            <div><h5 class="text-yellow-400 font-bold text-2xl uppercase italic">100%</h5><p class="text-xs uppercase text-gray-400">Innovation Focus</p></div>
+            <div class="flex flex-col">
+                <a href="https://www.facebook.com/profile.php?id=61589787712105" target="_blank" class="accent-red text-center py-2 rounded font-bold uppercase hover:bg-red-700 transition tracking-widest">Connect</a>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-400 font-bold uppercase tracking-widest">
+            <div class="flex space-x-6 mb-4 md:mb-0">
+                <span>pest.patrol@gmail.com</span>
+                <span>0967-166-4849</span>
+            </div>
+            <div class="flex space-x-6 items-center">
+                <span>© 2026 Pest Patrol Robotics Division</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTeam() {
+            const teamSection = document.getElementById('team-section');
+            if (teamSection.style.display === "none" || teamSection.style.display === "") {
+                teamSection.style.display = "block";
+                teamSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                teamSection.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
